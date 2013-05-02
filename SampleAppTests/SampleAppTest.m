@@ -7,16 +7,16 @@ describe(@"SampleClass", ^{
     context(@"when newly created", ^{
         it(@"should have a username", ^{
             SampleClass* user = [[SampleClass alloc] init];
-            user.username = @"TestUser";
+            user.username = 10;
             
-            [[user.username should] equal:@"TestUser"];
+            [[theValue(user.username) should] equal: theValue(10)];
         });
         
         it(@"should have a password", ^{
             SampleClass* user = [[SampleClass alloc] init];
-            user.username = @"Password";
+            user.password = 11;
             
-            [[user.username should] equal:@"Password"];
+            [[theValue(user.password) should] equal:theValue(11)];
         });
         
         

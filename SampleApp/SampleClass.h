@@ -2,7 +2,7 @@
 
 @interface SampleClass : NSObject
 
-@property (nonatomic, copy) NSString* username;
-@property (nonatomic, copy) NSString* password;
+@property NSInteger username;
+@property NSInteger password;
 
 @end

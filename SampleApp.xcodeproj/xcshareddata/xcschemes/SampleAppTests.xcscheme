@@ -9,20 +9,6 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "90A91FC117329287007C774B"
-               BuildableName = "SampleApp.app"
-               BlueprintName = "SampleApp"
-               ReferencedContainer = "container:SampleApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "NO">
@@ -53,15 +39,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "90A91FC117329287007C774B"
-            BuildableName = "SampleApp.app"
-            BlueprintName = "SampleApp"
-            ReferencedContainer = "container:SampleApp.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -72,15 +49,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "90A91FC117329287007C774B"
-            BuildableName = "SampleApp.app"
-            BlueprintName = "SampleApp"
-            ReferencedContainer = "container:SampleApp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +58,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "90A91FC117329287007C774B"
-            BuildableName = "SampleApp.app"
-            BlueprintName = "SampleApp"
-            ReferencedContainer = "container:SampleApp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
