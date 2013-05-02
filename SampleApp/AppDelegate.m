@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SampleClass.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,11 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    SampleClass* user = [SampleClass new];
+    user.username = 1;
+    user.password = 2;
+    
     return YES;
 }
 
