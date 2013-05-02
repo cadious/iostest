@@ -20,7 +20,10 @@
 		90A91FE517329288007C774B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A91FC517329287007C774B /* UIKit.framework */; };
 		90A91FE617329288007C774B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A91FC717329287007C774B /* Foundation.framework */; };
 		90A91FEE17329288007C774B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90A91FEC17329288007C774B /* InfoPlist.strings */; };
-		90A91FF117329288007C774B /* SampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A91FF017329288007C774B /* SampleAppTests.m */; };
+		90A91FFC17329304007C774B /* SampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A91FFB17329304007C774B /* SampleClass.m */; };
+		90A91FFD17329304007C774B /* SampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A91FFB17329304007C774B /* SampleClass.m */; };
+		90A9200117329383007C774B /* SampleAppTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A9200017329383007C774B /* SampleAppTest.m */; };
+		AD29B718A9974DE8A27A7EC4 /* libPods-SampleAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D47BCD556D3F4E33B602943F /* libPods-SampleAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +54,11 @@
 		90A91FE317329288007C774B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		90A91FEB17329288007C774B /* SampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleAppTests-Info.plist"; sourceTree = "<group>"; };
 		90A91FED17329288007C774B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		90A91FEF17329288007C774B /* SampleAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleAppTests.h; sourceTree = "<group>"; };
-		90A91FF017329288007C774B /* SampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppTests.m; sourceTree = "<group>"; };
+		90A91FFA17329304007C774B /* SampleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleClass.h; sourceTree = "<group>"; };
+		90A91FFB17329304007C774B /* SampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleClass.m; sourceTree = "<group>"; };
+		90A9200017329383007C774B /* SampleAppTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleAppTest.m; sourceTree = "<group>"; };
+		9BAF720F24D2492795C39C48 /* Pods-SampleAppTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.xcconfig"; path = "Pods/Pods-SampleAppTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		D47BCD556D3F4E33B602943F /* libPods-SampleAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 				90A91FE417329288007C774B /* SenTestingKit.framework in Frameworks */,
 				90A91FE517329288007C774B /* UIKit.framework in Frameworks */,
 				90A91FE617329288007C774B /* Foundation.framework in Frameworks */,
+				AD29B718A9974DE8A27A7EC4 /* libPods-SampleAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,7 @@
 				90A91FE917329288007C774B /* SampleAppTests */,
 				90A91FC417329287007C774B /* Frameworks */,
 				90A91FC317329287007C774B /* Products */,
+				9BAF720F24D2492795C39C48 /* Pods-SampleAppTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +113,7 @@
 				90A91FC717329287007C774B /* Foundation.framework */,
 				90A91FC917329287007C774B /* CoreGraphics.framework */,
 				90A91FE317329288007C774B /* SenTestingKit.framework */,
+				D47BCD556D3F4E33B602943F /* libPods-SampleAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,6 +124,8 @@
 				90A91FD417329287007C774B /* AppDelegate.h */,
 				90A91FD517329287007C774B /* AppDelegate.m */,
 				90A91FCC17329287007C774B /* Supporting Files */,
+				90A91FFA17329304007C774B /* SampleClass.h */,
+				90A91FFB17329304007C774B /* SampleClass.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -136,9 +147,8 @@
 		90A91FE917329288007C774B /* SampleAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				90A91FEF17329288007C774B /* SampleAppTests.h */,
-				90A91FF017329288007C774B /* SampleAppTests.m */,
 				90A91FEA17329288007C774B /* Supporting Files */,
+				90A9200017329383007C774B /* SampleAppTest.m */,
 			);
 			path = SampleAppTests;
 			sourceTree = "<group>";
@@ -176,10 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90A91FF717329288007C774B /* Build configuration list for PBXNativeTarget "SampleAppTests" */;
 			buildPhases = (
+				6462847D66ED47B5ACDFD01B /* Check Pods Manifest.lock */,
 				90A91FDD17329288007C774B /* Sources */,
 				90A91FDE17329288007C774B /* Frameworks */,
 				90A91FDF17329288007C774B /* Resources */,
 				90A91FE017329288007C774B /* ShellScript */,
+				3A5DFA0C34764F69B4EBE88F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +253,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A5DFA0C34764F69B4EBE88F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SampleAppTests-resources.sh\"\n";
+		};
+		6462847D66ED47B5ACDFD01B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
 		90A91FE017329288007C774B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +303,7 @@
 			files = (
 				90A91FD217329287007C774B /* main.m in Sources */,
 				90A91FD617329287007C774B /* AppDelegate.m in Sources */,
+				90A91FFC17329304007C774B /* SampleClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A91FF117329288007C774B /* SampleAppTests.m in Sources */,
+				90A91FFD17329304007C774B /* SampleClass.m in Sources */,
+				90A9200117329383007C774B /* SampleAppTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +410,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleApp/SampleApp-Prefix.pch";
 				INFOPLIST_FILE = "SampleApp/SampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -379,13 +423,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleApp/SampleApp-Prefix.pch";
 				INFOPLIST_FILE = "SampleApp/SampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		90A91FF817329288007C774B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BAF720F24D2492795C39C48 /* Pods-SampleAppTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -403,6 +450,7 @@
 		};
 		90A91FF917329288007C774B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BAF720F24D2492795C39C48 /* Pods-SampleAppTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -437,6 +485,7 @@
 				90A91FF617329288007C774B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90A91FF717329288007C774B /* Build configuration list for PBXNativeTarget "SampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +494,7 @@
 				90A91FF917329288007C774B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
