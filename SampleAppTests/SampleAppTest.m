@@ -16,7 +16,7 @@ describe(@"SampleClass", ^{
             SampleClass* user = [[SampleClass alloc] init];
             user.password = 11;
             
-            [[theValue(user.password) should] equal:theValue(11)];
+            [[theValue(user.password) should] equal:theValue(1)];
         });
         
         
