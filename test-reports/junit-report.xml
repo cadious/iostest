@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SampleAppTests.octest" tests="2" failures="1" errors="1" time="0.038404">
+	<testsuite name="KWSpec" tests="0" failures="0" errors="0" time="0.000021" timestamp="2013-05-31T15:04:25GMT+02:00">
+	</testsuite>
+	<testsuite name="KWTestCase" tests="0" failures="0" errors="0" time="0.000020" timestamp="2013-05-31T15:04:25GMT+02:00">
+	</testsuite>
+	<testsuite name="SampleClassSpec" tests="2" failures="1" errors="1" time="0.038363" timestamp="2013-05-31T15:04:25GMT+02:00">
+		<testcase classname="SampleClassSpec" name="SampleClass_WhenNewlyCreated_ShouldHaveAUsername" time="0.036059">
+			<system-out>2013-05-31 15:04:25.347 SampleApp[550:c07] + &apos;SampleClass, when newly created, should have a username&apos; [PASSED]
+</system-out>
+		</testcase>
+		<testcase classname="SampleClassSpec" name="SampleClass_WhenNewlyCreated_ShouldHaveAPassword" time="0.000701">
+			<failure message="&apos;SampleClass, when newly created, should have a password&apos; [FAILED], expected subject to equal 1, got 11" type="Failure">/Users/michal/Development/SampleApp/SampleAppTests/SampleAppTest.m:19</failure>
+		</testcase>
+	</testsuite>
+</testsuites>
